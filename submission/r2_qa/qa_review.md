@@ -2,8 +2,7 @@
 
 Mã khóa: AA43-F1C0
 
-**QA reviewer: Nguyễn Hải Long (NguyenHaiLong)** · **QC: Nguyễn Như Quỳnh (NguyenNhuQuynh)** · Annotator: Trần
-Minh Hiếu (TranMinhHieu).
+**QA reviewer: Nguyễn Hải Long (NguyenHaiLong)** · **QC: Nguyễn Như Quỳnh (NguyenNhuQuynh)** · Annotator: Trần Minh Hiếu (TranMinhHieu).
 
 Repo này đã chạy `mode` ở chế độ solo trước khi chốt nhóm nên giữ slice B1-mid (xem `40_decision_log.csv` D6).
 Bản khóa (mã AA43-F1C0) được giao cho Nguyễn Hải Long. Các nhận xét dưới đây được lập từ cold review trên bản đã
@@ -19,4 +18,13 @@ thống nhất giữ nguyên làm kết quả QA. Chỉ nêu vi phạm luật nh
 | adasind_034080.jpg | L8 | R01 | L8 ThreeWheeler và L11 Car gần trùng hoàn toàn trên cùng một vật xa (h≈44) — một vật hai box, hai class. |
 | adasind_034080.jpg | L10 | R05 | Pedestrian sát mép phải (x tới 1078) bị vòng kính/khung cắt nhưng `truncated=false`. |
 
-Ghi finding r2_qa: cell=L_only, rule_id có giá trị, why để trống.
+## Đánh giá và bàn giao của QA Reviewer Nguyễn Hải Long
+
+1. **Tổng hợp vi phạm nguyên tắc gán nhãn:**
+   - **Lỗi phạm vi ignore (P0 - R07, R10):** Phát hiện 3 box `Bike` vẽ nhầm lên chính tay lái của xe chủ và các polygon `ego_body` vẽ tràn lan che mất xe thật đang lưu thông trên đường.
+   - **Lỗi đối tượng trùng lặp (P1 - R01):** Một vật ở xa bị vẽ đè 2 box với 2 class mâu thuẫn (Car vs ThreeWheeler).
+   - **Lỗi thuộc tính (P2 - R05):** Cần chuẩn hóa lại thuộc tính `truncated` (vật bị cắt bởi vòng kính mới bật, vật trọn vẹn trong vòng kính thì tắt).
+
+2. **Kế hoạch bàn giao:**
+   - Bàn giao danh sách lỗi cho Annotator Trần Minh Hiếu để tiến hành sửa tại pha P5 (rework).
+   - Chuyển giao hồ sơ cho Điều phối viên Nguyễn Như Quỳnh để mở pha P4 (chạy đối chiếu reference/model và chủ trì phiên phân xử bất đồng).

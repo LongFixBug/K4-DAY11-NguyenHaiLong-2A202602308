@@ -1,9 +1,13 @@
 {
   "members": [
-    "TranMinhHieu"
+    "TranMinhHieu",
+    "long",
+    "quynh"
   ],
   "assignments": {
-    "TranMinhHieu": "B1-mid"
+    "TranMinhHieu": "B1-mid",
+    "long": "B1-center",
+    "quynh": "B3-center"
   },
   "self": "TranMinhHieu",
   "slice": "B1-mid",

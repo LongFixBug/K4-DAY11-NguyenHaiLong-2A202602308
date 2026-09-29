@@ -15,10 +15,11 @@
    trong vùng ignore (lens_border/ego). Trước khi nối track qua hai camera cần: timestamp đồng bộ giữa camera,
    intrinsic + extrinsic để chiếu hai box về cùng không gian (BEV/toạ độ xe), vị trí/vận tốc khớp trong vùng chồng,
    và policy output nói rõ có hợp nhất ID hay không.
-3. Nhìn lại cả buổi: một chỗ bạn tin nhãn mình đúng nhưng reference hoặc người soát nghĩ khác (dẫn frame/`object_ref`),
-   bạn đã xử lý thế nào, và nếu làm lại slice này bạn sẽ đổi gì trong cách làm? Ở adasind_014670.jpg, L4+M3 / R5:
-   mình (và model) gọi xe vàng ở mép trái là `Bus`, reference gọi `Truck`. Mình không tự sửa theo reference mà ghi
-   finding `E0_reference_defect` với bằng chứng trên ảnh (thân dài, hàng cửa sổ), đưa vào decision log D2 và
-   escalation ticket 2 — nhưng thừa nhận `truncated=false` của L4 là lỗi mình. Nếu làm lại, mình sẽ đọc kỹ R07 và
-   `sensor_context` trước khi vẽ để nhận ra vùng ego (tay lái xe máy) thay vì box `Bike`, không phủ `ego_body` lên xe
-   khác, và chạy self-QC rồi xóa hết cảnh báo trước khi khóa.
+3. Nhìn lại cả buổi: một chỗ nhóm tin nhãn mình đúng nhưng reference hoặc người soát nghĩ khác (dẫn frame/`object_ref`),
+   nhóm đã phối hợp xử lý thế nào, và nếu làm lại slice này sẽ đổi gì trong cách làm?
+   - **Bất đồng thực tế (adasind_014670.jpg, L4+M3 / R5):** Xe màu vàng ở mép trái ảnh. Nhãn người vẽ (Hiếu) và model (M3) cùng xác định là `Bus`, trong khi teaching reference (R5) gọi là `Truck`.
+   - **Phối hợp giải quyết giữa 3 thành viên:**
+     * *Nguyễn Hải Long (vai B - QA độc lập):* Trong pha QA mù, Long đối chiếu độc lập và phát hiện điểm mâu thuẫn này theo R04; Long không tự ý sửa theo reference mà giữ nguyên hiện tượng, đồng thời chỉ ra lỗi thiếu thuộc tính `truncated=true` của box L4 do bị vành kính cắt.
+     * *Trần Minh Hiếu (vai A - Gán nhãn):* Giải thích căn cứ ban đầu khi vẽ dựa trên đặc điểm trực quan (thân xe dài, có dải cửa sổ hành khách nằm ngang, không có thùng chở hàng của xe tải), và nhận lỗi đã để sót `truncated=false`.
+     * *Nguyễn Như Quỳnh (vai C - Điều phối & Chẩn đoán):* Mở báo cáo `compare.html` và `local_quality.md`, ghi nhận đây là `E0_reference_defect` gây ra 1 FP Bus và 1 FN Truck giả tạo; Quỳnh đưa ca này vào `40_decision_log.csv` (Quyết định D2) và soạn `30_escalation_ticket.md` (Ticket 2) gửi Lab Coach để xem xét cập nhật teaching reference, quyết định giữ nguyên class `Bus` có căn cứ.
+   - **Bài học rút ra nếu làm lại:** Cả nhóm sẽ thống nhất kỹ hơn ở pha P0 về định nghĩa vùng `ego_body` của camera gắn trên xe máy (tránh nhầm lẫn vẽ box `Bike` lên tay lái xe chủ); Annotator sẽ chạy kỹ `selfqc` trước khi khóa bản vẽ; và nhóm sẽ tiếp tục duy trì quy trình QA mù độc lập để không bị thiên kiến bởi đáp án tham chiếu.
