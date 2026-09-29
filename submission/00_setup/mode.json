@@ -12,8 +12,12 @@
   "self": "TranMinhHieu",
   "slice": "B1-mid",
   "degrade": [],
-  "current_slice": "C0",
+  "current_slice": "B1-mid",
   "support_prefill": false,
   "support_slice": "",
-  "prefill_box_ids": []
+  "prefill_box_ids": [
+    "adasind_014670.jpg:1",
+    "adasind_014670.jpg:2",
+    "adasind_014670.jpg:3"
+  ]
 }

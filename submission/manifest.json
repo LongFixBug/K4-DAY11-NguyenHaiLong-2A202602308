@@ -7,8 +7,8 @@
     },
     {
       "file": "00_setup/mode.json",
-      "lines": 19,
-      "sha256": "c4f09717413a885efbee72a5529fa3c8b96a3d4a53ed780ca58b42b59447d016"
+      "lines": 23,
+      "sha256": "adae7fc4c56c9c94f991d47c0f0f94e1dbb2029aa142819afb1d467b01a0afbe"
     },
     {
       "file": "00_setup/sensor_context.md",
