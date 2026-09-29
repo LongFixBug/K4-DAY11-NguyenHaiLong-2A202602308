@@ -1,9 +1,9 @@
 camera_id,slice_type,frames,risk,rationale
-front,normal,,TODO,TODO
-front,hard,,TODO,TODO
-rear,normal,,TODO,TODO
-rear,hard,,TODO,TODO
-left,normal,,TODO,TODO
-left,hard,,TODO,TODO
-right,normal,,TODO,TODO
-right,hard,,TODO,TODO
+front,normal,25,medium,"Đường thẳng ban ngày, xe/người ở giữa ảnh; đủ mẫu để đo baseline nhưng ít lỗi mới nên không cần nhiều"
+front,hard,35,high,"Nhiều người đi bộ/xe hai bánh cắt ngang, rider và xe ba bánh (lỗi ThreeWheeler→Truck/Car và tách rider thấy ở ADASIND), ngược sáng, đêm; camera phía trước quyết định phanh nên ưu tiên cao nhất"
+rear,normal,20,medium,"Lùi chuồng/đỗ xe ban ngày, vật chủ yếu ở mid; kiểm baseline camera sau"
+rear,hard,30,high,"Người/trẻ em sát đuôi xe trong vùng méo rìa, vật thấp gần H=40, thân xe ego và móc kéo chiếm đáy ảnh (lỗi ego_body/ignore thấy ở bài lab); tốc độ thấp nhưng rủi ro va chạm người cao"
+left,normal,20,medium,"Xe song song ở làn bên, lề đường; vật dài bị cắt bởi vòng kính"
+left,hard,25,high,"Vùng seam trước-trái/sau-trái (một vật trên hai camera), xe máy vượt sát hông, gương ego che một phần"
+right,normal,20,medium,"Lề phải, xe đỗ, người đi bộ trên vỉa hè ban ngày"
+right,hard,25,high,"Seam trước-phải/sau-phải, vạch ô đỗ và curb khi đỗ song song, người bước ra từ giữa xe đỗ"

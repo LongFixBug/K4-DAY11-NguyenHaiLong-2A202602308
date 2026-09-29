@@ -1,0 +1,15 @@
+{
+  "members": [
+    "TranMinhHieu"
+  ],
+  "assignments": {
+    "TranMinhHieu": "B1-mid"
+  },
+  "self": "TranMinhHieu",
+  "slice": "B1-mid",
+  "degrade": [],
+  "current_slice": "C0",
+  "support_prefill": false,
+  "support_slice": "",
+  "prefill_box_ids": []
+}

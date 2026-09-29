@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>60</id>
+      <size>1</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2026-09-29 03:21:23.663909+00:00</created>
+      <updated>2026-09-29 03:57:29.807299+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>0</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>60</id>
+          <start>0</start>
+          <stop>0</stop>
+          <url>http://localhost:8080/api/jobs/60/dataset/export/api/jobs/60</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>iwillwin2211@gmail.com</username>
+        <email>iwillwin2211@gmail.com</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>Bus</name>
+          <color>#ff8c00</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>occluded</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>truncated</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>edge_zone</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>Bike</name>
+          <color>#00d0ff</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>occluded</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>truncated</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>edge_zone</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>Car</name>
+          <color>#7cff00</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>occluded</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>truncated</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>edge_zone</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>Pedestrian</name>
+          <color>#ff3b30</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>occluded</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>truncated</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>edge_zone</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>Truck</name>
+          <color>#a05aff</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>occluded</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>truncated</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>edge_zone</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>ThreeWheeler</name>
+          <color>#ffd400</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>occluded</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>truncated</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+            <attribute>
+              <name>edge_zone</name>
+              <mutable>False</mutable>
+              <input_type>checkbox</input_type>
+              <default_value>false</default_value>
+              <values>false
+true</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>ignore_region</name>
+          <color>#808080</color>
+          <type>any</type>
+          <attributes>
+            <attribute>
+              <name>reason</name>
+              <mutable>False</mutable>
+              <input_type>select</input_type>
+              <default_value>ego_body</default_value>
+              <values>ego_body
+lens_border
+crowd_or_group
+unreadable
+privacy_or_policy</values>
+            </attribute>
+          </attributes>
+        </label>
+        <label>
+          <name>parking_line</name>
+          <color>#ffcc00</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>free_space</name>
+          <color>#35c98b</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2026-09-29 03:58:14.369051+00:00</dumped>
+  </meta>
+  <image id="0" name="parking-lot-core.jpg" width="960" height="720">
+    <polyline label="parking_line" source="manual" occluded="0" points="30.04,683.08;25.47,718.81" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="403.80,651.90;527.40,719.70" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="695.00,621.65;954.67,683.13" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="926.05,598.34;957.85,603.64" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="61.54,521.63;48.53,569.53" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="172.38,520.26;246.97,564.05" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="278.75,517.72;421.93,553.23" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="378.78,514.28;576.56,545.59" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="0.40,540.26;959.16,507.65" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="471.43,510.74;710.13,535.78" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="555.77,507.16;834.85,529.14" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="23.44,487.15;16.30,496.02" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="64.61,498.98;62.64,508.59" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="72.74,487.15;72.74,494.05" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="123.03,486.41;129.68,492.82" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="133.63,498.98;146.69,507.36" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="160.48,478.03;174.75,487.83" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="192.22,495.08;230.14,505.11" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="217.14,482.51;229.93,488.90" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="252.50,494.20;309.82,504.26" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="264.98,481.71;284.95,489.69" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="314.61,492.54;384.20,501.39" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="415.74,495.88;456.22,499.29" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="23.90,469.35;12.90,478.15" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="48.93,467.70;43.29,479.80" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="73.69,466.32;73.28,481.17" z_order="0">
+    </polyline>
+    <polyline label="parking_line" source="manual" occluded="0" points="97.93,468.51;103.11,481.08" z_order="0">
+    </polyline>
+    <polygon label="free_space" source="semi-auto" occluded="0" points="0.00,719.30;13.80,720.00;18.68,679.09;22.68,679.09;27.24,679.09;31.52,679.67;35.80,679.95;37.22,680.24;40.65,681.66;36.94,719.88;514.25,719.76;397.15,652.94;411.32,649.38;544.99,720.00;958.96,719.76;958.36,685.45;687.51,624.54;698.15,618.03;958.96,678.35;959.56,605.03;914.61,597.93;928.22,594.39;960.00,597.93;959.05,509.26;694.38,517.24;837.84,528.37;835.56,530.93;680.72,518.50;584.32,521.46;719.17,534.47;712.63,539.80;568.35,523.23;464.85,525.60;581.36,543.94;577.22,551.04;444.15,526.80;336.51,530.93;425.81,551.04;419.90,558.74;324.11,532.10;203.47,536.27;253.15,564.64;243.08,568.18;192.23,538.61;59.15,542.17;55.62,571.75;43.60,572.40;51.56,541.41;0.00,542.11;0.00,555.60;0.00,573.05;0.00,707.50" z_order="0">
+    </polygon>
+    <polygon label="free_space" source="manual" occluded="0" points="0.53,538.64;0.00,499.60;0.00,466.03;25.28,465.05;11.09,478.58;14.06,480.56;29.57,465.05;49.04,464.39;40.79,481.22;45.41,481.55;52.67,463.73;72.80,464.39;72.14,482.54;74.12,482.54;75.44,463.73;95.90,464.06;101.84,482.87;106.13,481.88;99.53,464.39;193.57,463.73;193.57,479.57;221.29,479.57;220.30,464.72;222.94,462.41;512.24,466.64;512.74,471.75;516.83,471.26;516.83,466.14;855.20,471.75;854.70,482.48;858.79,482.48;860.31,471.75;958.98,474.82;959.47,504.98;680.01,515.77;551.97,506.37;552.83,508.64;662.62,516.63;569.92,519.47;470.96,509.50;470.10,512.08;555.96,520.33;447.56,524.05;378.83,513.20;377.41,514.91;437.04,524.32;326.92,528.05;277.32,516.33;276.47,518.05;319.23,528.31;197.73,532.04;170.08,518.61;170.08,520.62;191.46,532.87;61.41,536.30;63.43,518.05;56.00,519.47;50.86,536.30" z_order="0">
+    </polygon>
+  </image>
+</annotations>
