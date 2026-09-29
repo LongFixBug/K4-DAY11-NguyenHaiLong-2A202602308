@@ -9,7 +9,7 @@
 - Tên định danh vai A dùng cho --self: TranMinhHieu
 - Kênh trao đổi nội bộ: Nhóm chat lớp
 - Đại diện nộp (vai C): Nguyễn Như Quỳnh
-- Commit chốt bài: [Cập nhật sau commit cuối]
+- Commit chốt bài: b35c0d8
 
 ## 2. Ba vai chính
 | Vai | Họ và tên | MSSV | Tên định danh trong mode | Trách nhiệm | Bằng chứng đóng góp |
